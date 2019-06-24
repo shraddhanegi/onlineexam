@@ -1,0 +1,41 @@
+<!-- main app container -->
+<div class="jumbotron">
+  <div class="container">
+
+          <div class="col-md-12">
+              <div class="row ">
+              <h3 id="user-name">Welcome {{username}}</h3>
+              <form name="form"  (ngSubmit)="f.form.valid && showResult(f)" #f="ngForm">
+             <div class="card" *ngFor ="let item of lists | keyvalue" >
+                <div class="card-body form-group">
+              <h4 class="mb-3 card-title">{{ item.value.question}}</h4>
+
+              <div class="d-block card-text  " *ngFor ="let option of  item.value.options | keyvalue">
+                    <label class="" for="credit">
+                      <input
+                          ngModel
+                          #answerControl="ngModel"
+                          [name]="item.key"
+                         [id]  = "item.key"
+                          type="radio"
+                          [value] = "option.value"
+                          required >
+
+               {{option.value}}</label>
+              </div>
+              </div>
+            </div><!--ng close-->
+            <div *ngIf="!f.valid ">Please answer the questions
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-primary" [disabled]="!f.valid">Show Result</button>
+              </div>
+
+          </form>
+
+
+
+            </div>
+          </div>
+      </div>
+  </div>

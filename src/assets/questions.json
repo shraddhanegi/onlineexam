@@ -1,0 +1,23 @@
+{
+            "q1": {
+                "question": "Speaker of loaksabha can ask member of house to stop speaking and let another member speak. This phenomenon is know as ",
+                "options": [
+                    "crossing the floor",
+                    "Yielding the floor",
+                    "point of order",
+                    "calling attention motion"
+                ],
+                "answer": "Yielding the floor"
+            },
+       
+            "q2": {
+                "question": "The comptroller and Auditor General of India can be removed from office in like manner and on like groud as:",
+                "options": [
+                    "High Court Judge",
+                    "Primister",
+                    "Supreme court Judge",
+                    "None of above"
+                ],
+                "answer": "Supreme court Judge"
+            }
+    }
